@@ -1,0 +1,9 @@
+<!-- _form.html.erb -->
+
+<%= form_for @post do |f| %>
+  title: <%= f.text_field :title %><br>
+  content: <%= f.text_area :content %><br>
+  tag: <%= f.text_field :tag %><br>
+
+  <%= f.submit %>
+<% end %>
